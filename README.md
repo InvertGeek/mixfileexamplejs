@@ -5,3 +5,5 @@ cookie获取教程: https://blog.csdn.net/lzsm_/article/details/126088857 \
 默认监听端口 5001
 
 image为图片,可自定义逻辑返回自定义图片,可返回随机图片(一个文件上传时只会访问一次图片)
+
+如果需要mixfile在失败时重试,请返回500状态码
