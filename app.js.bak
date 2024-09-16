@@ -69,8 +69,6 @@ app.put('/', async (req, res) => {
 // 处理 GET 请求
 app.get('/', (req, res) => {
     const filePath = path.join(__dirname, 'image.gif'); // 替换为你的文件路径
-	//强制设置客户端referer
-    res.set('referer', 'https://weibo.com/');
     res.sendFile(filePath, (err) => {
         if (err) {
             console.error('File send error:', err);
